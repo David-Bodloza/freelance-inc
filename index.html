@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@davidbodloza | Freelance-Inc</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; background: #f9f9f9; }
+        .card { background: #fff; border: 1px solid #ddd; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .btn { background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; transition: 0.3s; }
+        .btn:hover { background: #0056b3; }
+        form { background: #fff; padding: 25px; border-radius: 8px; border: 1px solid #ddd; margin-top: 40px; }
+        input, textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+    </style>
+</head>
+<body>
+    <h1>Freelance-Inc</h1>
+    
+    <!-- PROJECT 1 -->
+    <div class="card">
+        <h3>Project One: E-Commerce Site</h3>
+        <p>A full custom build for a retail client.</p>
+        <a href="https://david-project-one.netlify.app" class="btn" target="_blank">View Live Site &rarr;</a>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="card">
+        <h3>Project Two: Safari Taxidermy</h3>
+        <p>A high-end gallery and booking system.</p>
+        <a href="https://david-project-two.netlify.app" class="btn" target="_blank">View Live Site &rarr;</a>
+    </div>
+
+    <!-- NETLIFY CONTACT FORM -->
+    <form name="contact" method="POST" data-netlify="true" action="/success.html">
+        <input type="hidden" name="form-name" value="contact">
+        <h2>Hire Me</h2>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</body>
+</html>
