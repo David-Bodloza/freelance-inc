@@ -33,25 +33,23 @@
     <!-- W3Forms CONTACT FORM -->
     
 <!-- We change the action to Web3Forms and REMOVE data-netlify="true" -->
-<form action="https://api.web3forms.com" method="POST">
 
-    <!-- 1. PASTE YOUR ACCESS KEY HERE -->
+<form action="https://api.web3forms.com/submit" method="POST">
+
+<!-- 1. PASTE YOUR ACCESS KEY HERE -->
     <input type="hidden" name="access_key" value="0094e0b0-8319-4fe8-afab-ab9cded89897">
 
     <!-- 2. OPTIONAL: Redirect to your success page -->
-    <input type="hidden" name="redirect" value="https://freelance-inc.netlify.app/success.html">
+    <input type="hidden" name="redirect" value="https://freelance-inc.netlify.app">
 
-    <!-- 3. HONEYPOT: This stops bot spam (invisible to humans) -->
+   <!-- 3. HONEYPOT: This stops bot spam (invisible to humans) -->
     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-    <input type="text" name="name" placeholder="Your Name" required>
+  <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
     <textarea name="message" placeholder="Your Message" required></textarea>
-
-    <button type="submit" class="btn primary">Send Message</button>
+  <button type="submit" class="btn primary">Send Message</button>
 </form>
-
-
   
 </body>
 </html>
